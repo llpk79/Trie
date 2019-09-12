@@ -3,7 +3,7 @@
 A python implementation of the Trie data structure.
 
 A Trie data structure is for rapid retrieval of strings from a collection of strings given a prefix.
-
+See download information [here](https://test.pypi.org/project/llpk79-Trie/).
 ##### Import package.
 
 ```
