@@ -1,4 +1,4 @@
-from Trie import Trie
+from Trie.trie import Trie
 
 
 def main():
@@ -16,7 +16,7 @@ def main():
 
     # Add iterables.
     print(f'Add 466551 words to the Trie...')
-    with open('../words.txt', 'r') as f:
+    with open('words.txt', 'r') as f:
         text = [word.strip() for word in f.readlines()]
     trie.insert(text)
 
