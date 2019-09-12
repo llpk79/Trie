@@ -50,14 +50,18 @@ class Trie(object):
     def __init__(self):
         self.root = Node(None)
 
-    def insert(self, word):
+    def insert(self, words):
         """Helper function to call _insert with root node.
 
-        :var word: str
+        :var words: str or [str]
         """
-        if not word:
+        if not words:
             return
-        self._insert(word, self.root)
+        if isinstance(words, str):
+            self._insert(words, self.root)
+        else:
+            for word in words:
+                self._insert(word, self.root)
 
     def _insert(self, word, node):
         """Recurse through tree.
