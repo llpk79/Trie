@@ -1,5 +1,5 @@
 import unittest
-from Trie import Trie
+from Trie.trie import Trie
 
 
 # TODO: Add more stringent tests

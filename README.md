@@ -4,8 +4,13 @@ A python implementation of the Trie data structure.
 
 A Trie data structure is for rapid retrieval of strings from a collection of strings given a prefix.
 
+##### Import package.
 
-##### Instantiate a Trie
+```
+from Trie.trie import Trie
+```
+
+##### Instantiate a Trie.
 ```
 >>>trie = Trie()
 ```
