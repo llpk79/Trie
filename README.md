@@ -3,43 +3,51 @@
 A python implementation of the Trie data structure.
 
 A Trie data structure is for rapid retrieval of strings from a collection of strings given a prefix.
-See download information [here](https://test.pypi.org/project/llpk79-Trie/).
-##### Import package.
 
+See package information [here](https://test.pypi.org/project/llpk79-Trie/).
+
+##### Install package
+```
+pip install -i https://test.pypi.org/simple/ llpk79-Trie
+```
+
+##### Import package.
 ```
 from Trie.trie import Trie
 ```
 
 ##### Instantiate a Trie.
 ```
->>>trie = Trie()
+trie = Trie()
 ```
 
 ##### Insert a single string.
 ```
->>>trie.insert('word')
->>>trie.insert('single word or phrase')
+trie.insert('word')
+trie.insert('single word or phrase')
 ```
+
 ##### Insert an iterable of strings.
 ```
->>>words = ['list', 
-            'of', 
-            'some', 
-            'words', 
-            'sometimes', 
-            'a',
-            'similar',
-            'one']:
->>>trie.insert(words)
+words = ['list', 
+         'of', 
+         'some', 
+         'words', 
+         'sometimes', 
+         'a',
+         'similar',
+         'one']:
+trie.insert(words)
 ```
+
 ##### Retrieve list of stings beginning with given prefix.
 ```
->>>trie.list_words('wo')
+trie.list_words('wo')
 ['word', 'words']
 
->>>trie.list_words('so')
+trie.list_words('so')
 ['some', 'sometimes']
 
->>>trie.list_words('si')
+trie.list_words('si')
 ['similar', 'single word or phrase']
 ```
